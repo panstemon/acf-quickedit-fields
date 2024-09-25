@@ -106,10 +106,10 @@ class BackendSearch extends Feature {
 			}
 
 			// GROUP
-			$groupby = 'GROUP BY t.term_id';
-			if ( false === strpos( $clauses['order'], $groupby ) ) {
-				$clauses['orderby'] = " {$groupby} {$clauses['orderby']}";
-			}
+			// $groupby = 'GROUP BY t.term_id';
+			// if ( false === strpos( $clauses['groupby'], $groupby ) ) {
+			// 	$clauses['groupby'] = " {$groupby} {$clauses['groupby']}";
+			// }
 
 			return $clauses;
 		});
